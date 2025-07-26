@@ -1,9 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-.work-sans-font{
+.work-sans-font {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+/* shared style */
+.display-flex {
+  display: flex;
+}
+
+.dark-1 {
+  color: rgba(19, 19, 19, 1);
+}
+
+.dark-2 {
+  color: rgba(66, 66, 66, 1);
+}
+
+.dark-3 {
+  color: rgba(114, 114, 114, 1);
+}
+.bc-color{
+  background-color: rgba(255, 144, 14, 0.1);
+}
+/* header style */
+
+/* navbar style */
+.navbar {
+  justify-content: space-between;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgba(66, 66, 66, 1);
+}
+.navbar, .nav-link{
+  max-width: 1440px;
+  margin: 0px auto;
 }
