@@ -7,6 +7,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 /* shared style */
 .display-flex {
   display: flex;
@@ -23,11 +24,13 @@
 .dark-3 {
   color: rgba(114, 114, 114, 1);
 }
-.bc-color{
+
+.bc-color {
   background-color: rgba(255, 144, 14, 0.1);
 
 }
-.btn-primary{
+
+.btn-primary {
   background-color: rgba(255, 144, 14, 1);
   color: rgba(255, 255, 255, 1);
   padding: 20px 25px;
@@ -37,18 +40,29 @@
   border-radius: 8px;
 
 }
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main>section {
+  margin-top: 130px;
+}
+
 /* header style */
 
 /* navbar style */
 .navbar {
   justify-content: space-between;
-  align-items: center ;
+  align-items: center;
 }
 
-.brand{
+.brand {
   font-weight: 700;
   font-size: 3rem;
 }
+
 .nav-item {
   list-style: none;
   margin-right: 30px;
@@ -60,37 +74,84 @@
   font-size: 18px;
   color: rgba(66, 66, 66, 1);
 }
-.navbar, .banner{
+
+.navbar,
+.banner {
   max-width: 1440px;
   margin: 0 auto;
 }
 
 /* banner style */
-.banner-content{
+.banner-content {
   max-width: 850px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 50px;
 }
 
-.banner-title{
+.banner-title {
   font-weight: 700;
   font-size: 4rem;
 }
-.banner-details{
+
+.banner-details {
   font-weight: 400;
   font-size: 1rem;
 }
 
-.banner-img{
+.banner-img {
   width: 100%;
 }
+
+/* main section */
+/* first section */
+.teams {
+  align-items: center;
+}
+
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.our-features {
+  margin-left: 130px;
+  max-width: 530px;
+}
+
+.feature-title {
+  font-size: 2.8rem;
+}
+
+.feature-description {
+  font-size: 1rem;
+}
+
 /* responsive media query*/
 @media screen and (max-width:576px) {
-  .navbar, .nav-links{
+
+  .navbar,
+  .nav-links,
+  .teams {
     flex-direction: column;
   }
-  .nav-links{
+  .team-img-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .our-features{
+    margin-left: 20px;
+  }
+  .nav-links {
     gap: 10px;
+  }
+}
+/* medium device */
+@media screen and (min-width:576px) and (max-width:992px) {
+  .teams{
+    flex-direction: column;
+  }
+  .our-features{
+    margin-left: 50px auto;  
   }
 }
